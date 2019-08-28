@@ -15,6 +15,14 @@
 		50840DE62315AEC700208631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50840DE42315AEC700208631 /* LaunchScreen.storyboard */; };
 		50840DEE2315B45200208631 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = 50840DED2315B45200208631 /* color.json */; };
 		50840DF02315B4A500208631 /* decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50840DEF2315B4A500208631 /* decode.swift */; };
+		50840DF42315CB2B00208631 /* detailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50840DF32315CB2B00208631 /* detailColorViewController.swift */; };
+		50840DF62315D97500208631 /* people.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50840DF52315D97500208631 /* people.swift */; };
+		50840DF82315DA5600208631 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 50840DF72315DA5600208631 /* people.json */; };
+		50987AC3231721A000C67155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50987AC2231721A000C67155 /* ViewController.swift */; };
+		50987AC62317287600C67155 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50987AC52317287600C67155 /* Weather.swift */; };
+		50987AC82317288800C67155 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50987AC72317288800C67155 /* ThirdViewController.swift */; };
+		50987ACA231729D400C67155 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 50987AC9231729D400C67155 /* weather.json */; };
+		50987ACC2317313000C67155 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50987ACB2317313000C67155 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		50840DE72315AEC700208631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50840DED2315B45200208631 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		50840DEF2315B4A500208631 /* decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decode.swift; sourceTree = "<group>"; };
+		50840DF32315CB2B00208631 /* detailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailColorViewController.swift; sourceTree = "<group>"; };
+		50840DF52315D97500208631 /* people.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = people.swift; sourceTree = "<group>"; };
+		50840DF72315DA5600208631 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = people.json; path = ../../../people.json; sourceTree = "<group>"; };
+		50987AC2231721A000C67155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = tab/secondView/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		50987AC52317287600C67155 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		50987AC72317288800C67155 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		50987AC9231729D400C67155 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = ../../../weather.json; sourceTree = "<group>"; };
+		50987ACB2317313000C67155 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +80,7 @@
 				50840DDF2315AEC600208631 /* Main.storyboard */,
 				50840DF12315B5A300208631 /* firstView */,
 				50840DF22315B5C900208631 /* secondView */,
-				50840DE22315AEC700208631 /* Assets.xcassets */,
+				50987AC42317285C00C67155 /* thirdView */,
 				50840DE42315AEC700208631 /* LaunchScreen.storyboard */,
 				50840DE72315AEC700208631 /* Info.plist */,
 			);
@@ -77,6 +93,7 @@
 				50840DED2315B45200208631 /* color.json */,
 				50840DEF2315B4A500208631 /* decode.swift */,
 				50840DDB2315AEC600208631 /* FirstViewController.swift */,
+				50840DF32315CB2B00208631 /* detailColorViewController.swift */,
 			);
 			path = firstView;
 			sourceTree = "<group>";
@@ -84,9 +101,24 @@
 		50840DF22315B5C900208631 /* secondView */ = {
 			isa = PBXGroup;
 			children = (
+				50840DF72315DA5600208631 /* people.json */,
 				50840DDD2315AEC600208631 /* SecondViewController.swift */,
+				50987AC2231721A000C67155 /* ViewController.swift */,
+				50840DF52315D97500208631 /* people.swift */,
 			);
 			path = secondView;
+			sourceTree = "<group>";
+		};
+		50987AC42317285C00C67155 /* thirdView */ = {
+			isa = PBXGroup;
+			children = (
+				50840DE22315AEC700208631 /* Assets.xcassets */,
+				50987AC9231729D400C67155 /* weather.json */,
+				50987AC52317287600C67155 /* Weather.swift */,
+				50987AC72317288800C67155 /* ThirdViewController.swift */,
+				50987ACB2317313000C67155 /* WeatherViewController.swift */,
+			);
+			path = thirdView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50840DE62315AEC700208631 /* LaunchScreen.storyboard in Resources */,
+				50840DF82315DA5600208631 /* people.json in Resources */,
+				50987ACA231729D400C67155 /* weather.json in Resources */,
 				50840DEE2315B45200208631 /* color.json in Resources */,
 				50840DE32315AEC700208631 /* Assets.xcassets in Resources */,
 				50840DE12315AEC600208631 /* Main.storyboard in Resources */,
@@ -161,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50987AC62317287600C67155 /* Weather.swift in Sources */,
+				50987ACC2317313000C67155 /* WeatherViewController.swift in Sources */,
+				50987AC82317288800C67155 /* ThirdViewController.swift in Sources */,
+				50840DF42315CB2B00208631 /* detailColorViewController.swift in Sources */,
 				50840DDE2315AEC600208631 /* SecondViewController.swift in Sources */,
+				50840DF62315D97500208631 /* people.swift in Sources */,
 				50840DDA2315AEC600208631 /* AppDelegate.swift in Sources */,
+				50987AC3231721A000C67155 /* ViewController.swift in Sources */,
 				50840DDC2315AEC600208631 /* FirstViewController.swift in Sources */,
 				50840DF02315B4A500208631 /* decode.swift in Sources */,
 			);

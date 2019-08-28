@@ -36,8 +36,15 @@ class FirstViewController: UIViewController {
                 
             }
         }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let ColorDetailVC = segue.destination as? detailColorViewController
+            else { fatalError("Unexpected segue")}
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow
+            else { fatalError("No row selected") }
+        ColorDetailVC.detailsViewColor = colors[selectedIndexPath.row]
+    }
 }
+
 extension FirstViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colors.count
@@ -54,7 +61,6 @@ extension FirstViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
-    
+
 }
 
